@@ -88,7 +88,7 @@
 
 
 <!---------left notification here-->
-<div class="top-left-notification-hotel">
+<div class="top-left-notification-hotel" ng-controller="notificationsCtrl">
 	
     <div class="notification-hotel-heading">
         <a href="#" class="mB-zero mT-zero">Notifications</a>
@@ -98,19 +98,10 @@
     </div>
     
     <div class="notification-hotel-border-bottom"></div>
-
-    <div class="notifications-hotel-heading">
-        <a href="#" class="mB-zero news" target="_blank">Pillows is almost arriving</a>
-    </div>
-  
-
-    <div class="notifications-hotel-heading">
-        <a href="#" class="mB-zero news" target="_blank">Food will be delivered in 5mins</a>
-    </div>
-   
-
-    <div class="notifications-hotel-heading">
-        <a href="#" class="mB-zero news" target="_blank">Robe will delivered in 10mins</a>
+	<div  ng-repeat="item in notifications">
+        <div class="notifications-hotel-heading">
+            <a href="#" class="mB-zero news" target="_blank">{{item.description}}</a>
+        </div>
     </div>
     
 

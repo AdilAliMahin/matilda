@@ -34,6 +34,17 @@ function calCtrl($scope, $timeout) {
     cal();
 }
 
+
+function notificationsCtrl($scope, $http) {
+	$http({
+		method: 'POST',
+		url: notifications.url,
+	})
+	.success(function(data) {
+	 	$scope.notifications = data.items;  
+	});
+}
+
 function messageCtrl($scope, $timeout) {
     $scope.messagesShow = messages.show;
     $scope.message = messages.data[0];

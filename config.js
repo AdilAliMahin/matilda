@@ -25,6 +25,13 @@ var messages = {
 	]
 };
 
+var notifications = {
+	'show': true,
+	'url': 'api/notifications.json',
+	'limit': 3,
+	'refresh': 20000
+};
+
 var newsfeed = {
 	'show': true,
 	'url': 'http://rss.cnn.com/rss/cnn_topstories.rss',
