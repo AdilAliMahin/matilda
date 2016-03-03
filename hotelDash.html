@@ -1,0 +1,154 @@
+﻿<html ng-app="mirrorApp">
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<link rel="stylesheet" type="text/css" href="css/weather-icons.css">
+<link rel="stylesheet" type="text/css" href="css/notifications.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+<meta name="google" value="notranslate"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!---top center mini calender-->
+<div class="top">
+   <div class="center" ng-controller="dateCtrl">
+
+   <!-- <div class="time">{{currDate | date:'hh:mm'}}<span
+                class="time">{{currDate.getHours() >= 12 ? ' PM' : ' AM' }}</span>
+        </div>
+        <div class="date small dimmed day">{{currDate | date:'EEEE'}}</div>
+        <div class="date small dimmed day">{{currDate | date:'MMMM d, yyyy'}}</div>-->
+    
+        <div class="time align-center"><span class="amenities-time">{{currDate | date:'hh:mm'}}</span>
+        <sup style="font-size: 30px; position:relative; top:-7px;">{{currDate | date:'ss'}}</sup>
+        <span class="amenities-time">{{currDate.getHours() >= 12 ? ' PM' : ' AM' }}</span></div>
+        <div class="day-wrapper"><span class="day">{{currDate | date:'EEEE'}}</span></div>
+        <div class="month-wrapper"><span class="month">{{currDate | date:'MMMM d, yyyy'}}</span></div>
+    
+   </div>
+</div>
+
+
+
+<!-- top right side-->
+
+<div class="right top-right-aside" ng-controller="WeatherCtrl">
+    
+    <div style="display: inline-block; width:100%; margin-top: 7%;text-align: left;">
+       <span class="first-tem-degree font-style">{{weatherNow.main.temp | number:0}}° F</span>
+      <div class="top-weather-icon">
+       <i class="wi wi-day-cloudy-gusts"></i>
+      </div>
+    </div>
+
+    <div class="second-tem-degree">
+        <span class="font-style">{{weatherNow.main.temp | number:0}}° F</span>
+    </div>
+
+    <div class="weather-here mB-cloudy">
+        <span class="font-style">{{weatherNow.weather[0].main}}</span>
+    </div>
+    <div class="weather-here">
+        <span class="font-style">{{weatherNow.weather[0].description}}</span>
+    </div>
+</div>
+<!--top-right side ends here-->
+<div class="clr"></div>
+
+<div class="content-wrapper">
+
+    <div class="top-right-notification-hotel">
+            <div class="notification-hotel-heading">
+            	<a href="#" class="mB-zero mT-zero">Music</a>
+                <div class="add-more-music">
+                    <a href="#"><img src="images/add-more-red.png" alt="image-not-found" title="add-item"></a>
+                </div>
+       		</div>
+        <div class="notification-hotel-border-bottom-music"></div>
+        
+        <div class="play-button">
+        	<a href="#"><img src="images/play-button.png" alt="image-not-found" title="play-button"></a>
+        </div>
+        
+        <div class="top-right-notification-heading">
+        	<h1>Happy</h1>
+            <p>Pharrell Williams</p>
+        </div>
+    </div>
+   
+
+</div>
+
+
+
+
+<!---------left notification here-->
+<div class="top-left-notification-hotel">
+	
+    <div class="notification-hotel-heading">
+        <a href="#" class="mB-zero mT-zero">Notifications</a>
+        <div class="add-more-notification">
+         <a href="#"><img src="images/add-more-red.png" alt="image-not-found" title="add-item"></a>
+        </div>
+    </div>
+    
+    <div class="notification-hotel-border-bottom"></div>
+
+    <div class="notifications-hotel-heading">
+        <a href="#" class="mB-zero news" target="_blank">Pillows is almost arriving</a>
+    </div>
+  
+
+    <div class="notifications-hotel-heading">
+        <a href="#" class="mB-zero news" target="_blank">Food will be delivered in 5mins</a>
+    </div>
+   
+
+    <div class="notifications-hotel-heading">
+        <a href="#" class="mB-zero news" target="_blank">Robe will delivered in 10mins</a>
+    </div>
+    
+
+</div>
+
+
+</div>
+<!----------------content-wrapper ends here-->
+
+
+<div class="clr"></div>
+
+<div class="current-traffic">
+  <div class="seven-days-header">
+      <h1 class="mB-zero weather-heading font-style FR">CURRENT TRAFFIC</h1>
+    </div>
+  <div class="border-bottom"></div>
+</div>
+
+
+
+
+
+		<script src="js/jquery.js"></script>
+    	<script src="js/main.js"></script>
+		<script src="js/ical_parser.js"></script>
+		<script src="js/moment-with-langs.min.js"></script>
+		<script src="config.js"></script>
+		<script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+		<script src="http://code.angularjs.org/1.2.9/angular-resource.min.js"></script>
+		<script src="http://code.angularjs.org/1.2.9/angular-animate.min.js"></script>
+		<script src="js/angular-locale_en-us.js"></script>
+		<script src="js/angular-moment.min.js"></script>
+        <script src="js/notification.js"></script>
+        <script src="js/amenities.js"></script>
+  		<script src="controllers.js"></script>
+
+
+
+</body>
+</html>
