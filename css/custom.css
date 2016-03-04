@@ -434,6 +434,25 @@ img {
 	margin: 12% 0 0 3%;
 	float:left;
 }
+.notification-hotel{
+	width: 100%;
+	float: left;
+}
+.notifications-hotel-heading-top{
+    width: 60%;
+	margin-bottom: 2%;
+	float: left;
+}
+.notifications-hotel-heading-top a{
+    font-size: 42px;
+	/*margin-top: 4%; */
+    margin-left: 1%;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
 .notification-hotel-heading{
 	width: 100%;
 	margin-bottom: 2%;
@@ -451,7 +470,8 @@ img {
 }
 .add-more-notification{
     float: left;
-    width: 27%;
+    width: 25%;
+    margin: -3%;
 }
 .add-more-notification a{
 	width:100%;
@@ -460,8 +480,8 @@ img {
 }
 .add-more-notification img{
     max-width:100%;	
-    width: 36%;
-    margin-left: 48%;
+    width: 40%;
+    margin-left: 40%;
 }
 .notifications-hotel-heading{
 	width: 100%;
@@ -469,7 +489,7 @@ img {
 	float: left;
 }
 .notifications-hotel-heading a{
-    font-size: 26px;
+    font-size: 24px;
     margin-top: 4%;
     margin-left: 1%;
     float: left;
@@ -481,7 +501,7 @@ img {
 .notification-hotel-border-bottom{
 	border-bottom: 4px solid #ed1c24;
 	float: left;
-    width: 85%;
+    width: 72%;
 }
 .mT-zero{
 	margin-top: 0px !important;
@@ -497,7 +517,8 @@ img {
 }
 .add-more-music{
     float: left;
-    width: 27%;
+    width: 30%;
+	margin: -3%;
 }
 .add-more-music a{
 	width:100%;
@@ -543,8 +564,115 @@ img {
 .notification-hotel-border-bottom-music{
 	border-bottom: 4px solid #ed1c24;
 	float: left;
-    width: 100%;	
+    width: 99%;	
 }
+/*-----top right music end here-----*/
+
+.good-morning{
+	widows: 100%;
+}
+.good-morning h1{
+	margin:0px;
+	color:white;
+	text-align:center;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:46px;	
+	padding-top:4%;
+}
+
+/*-----Hotel amenities start here-----*/
+
+.hotel-amenities{
+	width:30%;
+	float:left;
+	margin: 12% 0 0 3%;
+}
+.hotel-amenities-heaading-div{
+	width:100%;
+	float:left;	
+}
+.hotel-amenities-heading{
+	width: 80%;
+    margin-bottom: 2%;
+    float: left;
+}
+.hotel-amenities-heading a{
+	color: white;
+    font-size: 70px;
+    margin-left: 1%;
+    font-family: 'Nunito', sans-serif;
+    float: left;
+    text-decoration: none;
+    font-weight: 300;	
+}
+.add-more-amenities{
+	float: left;
+    width: 20%;
+    margin-top: 15%;	
+}
+.add-more-amenities a{
+    cursor: pointer;
+    display: inline-block;
+	width:100%;
+}
+.add-more-amenities img{
+    max-width: 100%;
+    width: 50%;
+    margin-left: 78%
+}
+.hotel-amenities-border-bottom{
+	border-bottom: 4px solid #ed1c24;
+	float: left;
+    width: 100%;
+}
+.hotel-amenities-detail{
+	width:100%;
+	float:left;
+	padding-top: 8%;
+	padding-left:2%;
+}
+.hotel-amenities-detail-image-outer{
+    float: left;
+    width: 50%;
+}
+.hotel-amenities-detail-image-inner{
+    float: left;
+    width: 50%;
+}
+.hotel-amenities-detail-image a{
+	
+}
+.hotel-amenities-detail-image img{
+	width:100%;
+}
+.circle-hotel{
+	position:relative;
+}
+.deodorant{
+	position:relative;
+    left: -80%;
+    top: 47px;
+}
+.hotel-amenities-detail-heading{
+	float: left;
+	width:50%;
+}
+.hotel-amenities-detail-heading a{
+	font-size: 46px;
+    color: white;
+    text-decoration: none;
+    text-align: center;	
+}
+/*-----Hotel amenities start here-----*/
+
+/*-----closet start here-----*/
+
+.closet{
+	
+}
+
+
+/*-----closet start here-----*/
 
 
 /*-----------media queries for music page--------------*/
