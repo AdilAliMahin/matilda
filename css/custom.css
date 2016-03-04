@@ -631,27 +631,17 @@ img {
 	padding-top: 8%;
 	padding-left:2%;
 }
-.hotel-amenities-detail-image-outer{
-    float: left;
+.hotel-amenities-detail-image{
+	background-image: url(../images/circle-hotel-amenities.png);
+    background-repeat: no-repeat;
     width: 50%;
-}
-.hotel-amenities-detail-image-inner{
+    height: 23%;
     float: left;
-    width: 50%;
-}
-.hotel-amenities-detail-image a{
-	
 }
 .hotel-amenities-detail-image img{
-	width:100%;
-}
-.circle-hotel{
-	position:relative;
-}
-.deodorant{
-	position:relative;
-    left: -80%;
-    top: 47px;
+	width: 50%;
+    margin-left: 20%;
+    margin-top: 14%;
 }
 .hotel-amenities-detail-heading{
 	float: left;
@@ -661,7 +651,8 @@ img {
 	font-size: 46px;
     color: white;
     text-decoration: none;
-    text-align: center;	
+    text-align: center;
+	line-height: 5em;	
 }
 /*-----Hotel amenities start here-----*/
 
