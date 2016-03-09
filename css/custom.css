@@ -622,7 +622,7 @@ img {
 	line-height: 5.23em !important;
 }
 
-/*-----------media queries for music page--------------*/
+/*-----------CSS for music page--------------*/
 
 .music-right-aside{
 	width:17%;
@@ -904,23 +904,79 @@ img {
 	top:529px !important;
 }
 .second-fav-item{
-	width: 16.5% !important;
+	width: 16.67% !important;
 	top: -25px;
 	left: 268px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.third-item{
+	position: absolute;
+	top: 515px !important;
+	left: 40px !important;
+	width: 35% !important;
+}
+.third-fav-item{
+    width: 17.123% !important;
+    top: -24px;
+    left: 260px;
+}
+.fourth-item{
+	position: absolute;
+	top: 610px !important;
+	left: 364px !important;
+	width: 45% !important;
+}
+.fourth-fav-item{
+	width: 13.33% !important;
+	top: -24px;
+	left: 341px;
+}
+.fifth-item{
+	position: absolute;
+	top: 977px !important;
+	left: 39px !important;
+	width: 56% !important;
+}
+.fifth-fav-item{
+	width: 10.712% !important;
+	top: -24px;
+	left: 429px;
+}
+.sixth-item{
+	position: absolute;
+	top: 909px !important;
+	left: 532px !important;
+	width: 25% !important;
+}
+.sixth-fav-item{
+	width: 24% !important;
+	top: -26px;
+	left: 179px;
+}
+.seventh-item{
+	position: absolute;
+	top: 1480px !important;
+	left: 39px !important;
+	width: 39% !important;
+}
+.seventh-fav-item{
+	width: 15.37% !important;
+	top: -25px;
+	left: 291px;
+}
+.mB-last-img{
+	margin-bottom:17%;
+}
+.eighth-item{
+	position: absolute;
+	top: 1341px !important;
+	left: 393px !important;
+	width: 42.3% !important;
+}
+.eighth-fav-item{
+	width: 14.17% !important;
+	top: -25px;
+	left: 319px;
+}
 
 
 
@@ -995,22 +1051,9 @@ img {
 }
 
 
-
-
-
 /*-----------------------media queries for amenities page here--------------------------*/
 
 
-@media only screen and (min-device-width : 1440px) and (max-device-width : 1920px) {
-	
-.main-bg{
-	background:url(../images/matilda.jpg) top left no-repeat;
-	background-size:cover;
-}
-	
-	
-	
-}
 
 /*------------media queries for responsive tablet size here(hotel dash)    size(max-width=1024)--------------*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
@@ -1051,6 +1094,11 @@ img {
 
 @media only screen and (min-device-width : 1440px) and (max-device-width : 1920px) {
 
+
+.main-bg{
+	background-size:cover;	
+}
+
 .scroll-circle {
     height: 11%;
 }
@@ -1064,6 +1112,54 @@ img {
 .fav-item {
     left: 397px;
     top: 25px;
+}
+.third-item {
+    top: 695px !important;
+    left: 57px !important;
+}
+.third-fav-item {
+    top: -33px;
+    left: 369px;
+}
+.fourth-item {
+    top: 839px !important;
+    left: 530px !important;
+}
+.fourth-fav-item{
+	left: 484px;
+    top: -34px;
+}
+.fifth-item {
+    top: 1368px !important;
+    left: 57px !important;
+}
+.fifth-fav-item{
+    left: 611px;
+    top: -35px;
+}
+.sixth-item {
+    top: 1246px !important;
+    left: 773px !important;
+}
+.sixth-fav-item{
+    left: 253px;
+    top: -35px;
+}
+.seventh-item {
+    top: 2050px !important;
+    left: 57px !important;
+}
+.seventh-fav-item{
+    left: 414px;
+    top: -35px;
+}
+.eighth-item {
+    top: 1900px !important;
+    left: 582px !important;
+}
+.eighth-fav-item{
+    left: 453px;
+    top: -35px;
 }
 
 

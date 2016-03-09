@@ -14,196 +14,230 @@
 
 <body>
 
-<!---top center mini calender-->
-<div class="top">
-   <div class="center" ng-controller="dateCtrl">
 
-   <!-- <div class="time">{{currDate | date:'hh:mm'}}<span
-                class="time">{{currDate.getHours() >= 12 ? ' PM' : ' AM' }}</span>
+<!--------------main-bg here-->
+<div class="main-bg">
+
+
+<!------------weather condition-->
+<div class="tem-top-right">
+<div class="temp-top" style="display: inline-block; width: 100%; margin-top: 7%;text-align: left; font-size:20px;">
+32° F</div>
+  <span class="weather-condition">Mostly Cloudy</span>
+</div>
+
+
+<!------------main-container amentities--> 
+ <div class="main-container-amentities">
+   <div class="amentities-wrapper">
+      <div class="date-wrapper ">
+      
+            <div class="time align-center"><span class="amenities-time">12:00</span><sup style="font-size:12px; position:relative; top:-7px;">20</sup><span class="amenities-time">PM</span></div>
+        <div class="date amentities-day">Tuesday, January 19</div>
+    
+                <span class="country-name">New York</span>
+                            
+    </div>
+    </div>
+</div>
+<!------------main-container amentities ends here-->
+
+
+
+<!------hotel dash starts here-->
+
+<div class="content-wrapper-hotel-dash">
+
+
+<!------left aside starts here-->
+<div class="left-aside-notification">
+	<div class="hotel-dash-notification">
+    
+    	<div class="hotel-dash-heading">
+        	<h1>Notification</h1>
         </div>
-        <div class="date small dimmed day">{{currDate | date:'EEEE'}}</div>
-        <div class="date small dimmed day">{{currDate | date:'MMMM d, yyyy'}}</div>-->
-    
-        <div class="time align-center"><span class="amenities-time">{{currDate | date:'hh:mm'}}</span>
-        <sup style="font-size: 30px; position:relative; top:-7px;">{{currDate | date:'ss'}}</sup>
-        <span class="amenities-time">{{currDate.getHours() >= 12 ? ' PM' : ' AM' }}</span></div>
-        <div class="day-wrapper"><span class="day">{{currDate | date:'EEEE'}}</span></div>
-        <div class="month-wrapper"><span class="month">{{currDate | date:'MMMM d, yyyy'}}</span></div>
-    
-   </div>
-</div>
-
-
-
-<!-- top right side-->
-
-<div class="right top-right-aside" ng-controller="WeatherCtrl">
-    
-    <div style="display: inline-block; width:100%; margin-top: 7%;text-align: left;">
-       <span class="first-tem-degree font-style">{{weatherNow.main.temp | number:0}}° F</span>
-      <div class="top-weather-icon">
-       <i class="wi wi-day-cloudy-gusts"></i>
-      </div>
-    </div>
-
-    <div class="second-tem-degree">
-        <span class="font-style">{{weatherNow.main.temp | number:0}}° F</span>
-    </div>
-
-    <div class="weather-here mB-cloudy">
-        <span class="font-style">{{weatherNow.weather[0].main}}</span>
-    </div>
-    <div class="weather-here">
-        <span class="font-style">{{weatherNow.weather[0].description}}</span>
+        <div class="hotel-dash-addmore">
+        	<a href="#"><img src="images/add-more-red.png" alt="image-not-found"></a>
+        </div>  
+        
+        <div class="hotel-dash-heading-border-bottom">
+        </div>
+        
+        <div class="hotel-dash-heading-detail">
+        	<p>Pillow is almost arriving</p>
+            <p>Food will be delivered in 5mins</p>
+            <p>Robe will be delivered in 10mins</p>
+        </div>
+        
     </div>
 </div>
-<!--top-right side ends here-->
+<!------left aside ends here-->
+
+<!-----right aside notification starts here-->
+<div class="right-aside-notification">
+	<div class="hotel-dash-notification">
+    
+    	<div class="hotel-dash-heading">
+        	<h1>Music</h1>
+        </div>
+        
+        <div class="hotel-dash-addmore FW-addmore">
+        	<a href="#"><img src="images/add-more-red.png" alt="image-not-found"></a>
+        </div>
+        
+        <div class="hotel-dash-heading-border-bottom FW-music">
+        </div>
+        
+        <div class="hotel-dash-play-button">
+        	<a href="#"><img src="images/play-button.png" alt="image-not-found"></a>
+        </div>
+        
+        <div class="hotel-dash-happy">
+        	<h1>Happy</h1>
+            <h3>Pharrell Williams</h3>
+        </div>
+        
+    </div>
+</div>
+<!-----right aside notification ends here-->
+
+<div class="hotel-dash-GM">
+	<h1>Goodmorning <br> Andre</h1>
+</div>
+
+<!-------hotel amenities starts here-->
+
+<!-------hotel amenities left aside starts here-->
+<div class="hotel-amenities-left-aside">
+	<div class="hotel-amenities-heading-div">
+    	
+        <div class="hotel-amenities-heading">
+        	<h1>Hotel Amenities</h1>
+        </div>
+        
+        <div class="hotel-amenities-addmore">
+        	<a href="#"><img src="images/add-more-red.png" alt="image-not-found"></a>
+        </div>
+        
+        <div class="hotel-amenities-heading-border-bottom">
+        </div>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images">
+            	<a href="#"><img class="hotel-amenities-detail-images-position" src="images/deodorant.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Deodorant</h1>
+            </div>
+        </div>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images">
+            	<a href="#"><img class="hotel-amenities-detail-images-position hair-spray-position" src="images/hair-spray.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Hair Spray</h1>
+            </div>
+        </div>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images">
+            	<a href="#"><img class="hotel-amenities-detail-images-position" src="images/robe-hotel.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Robe Hotel</h1>
+            </div>
+        </div>
+        
+       	<div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images">
+            	<a href="#"><img class="hotel-amenities-detail-images-position" src="images/yoga-mat.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Yoga Mat</h1>
+            </div>
+        </div>
+        
+                <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images">
+            	<a href="#"><img class="hotel-amenities-detail-images-position" src="images/iron.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Iron</h1>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-------hotel amenities left aside ends here-->
+
+<!-------hotel amenities right aside starts here-->
+<div class="hotel-amenities-right-aside">
+	<div class="hotel-amenities-heading-div">
+    	
+        <div class="hotel-amenities-heading">
+        	<h1>Closet</h1>
+        </div>
+        
+        <div class="hotel-amenities-addmore">
+        	<a href="#"><img  class="MN-addmore" src="images/add-more-red.png" alt="image-not-found"></a>
+        </div>
+        
+        <div class="hotel-amenities-heading-border-bottom">
+        </div>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images BG-closet">
+            	<a href="#" class="white-circle"><img class="hotel-amenities-detail-images-position white-circle-position" src="images/gray-t-shirt.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1 class="HD-closet">Gray t-shirt</h1>
+            </div>
+        </div>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images BG-closet">
+            	<a href="#" class="white-circle"><img class="hotel-amenities-detail-images-position white-circle-position" src="images/pants.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Pants</h1>
+            </div>
+        </div>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images BG-closet">
+            	<a href="#" class="white-circle"><img class="hotel-amenities-detail-images-position white-circle-position" src="images/skirt.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Skirt</h1>
+            </div>
+        </div>
+        
+       	<div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images BG-closet">
+            	<a href="#" class="white-circle"><img class="hotel-amenities-detail-images-position" src="images/heels.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Heels</h1>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-------hotel amenities right aside ends here-->
+
+<!-------hotel amenities ends here-->
+
 <div class="clr"></div>
 
-<div class="content-wrapper">
+</div>
+<!----hotel dash ends here-->
 
-<div class="seven-days-weather">
-    <div class="seven-days-header">
-        <h1 class="mB-zero weather-heading font-style">7-DAY WEATHER FORECAST</h1>
-    </div>
-    <div class="border-bottom"></div>
 
-    <div class="days mL-first-day">
-        <span class="wi wi-day-cloudy icon-calender-size"></span>
-
-        <p class="detail DmB font-style">sun</p>
-
-        <p class="detail font-style">80</p>
-
-        <p class="detail DmB blue font-style">75</p>
-
-        <p class="detail font-style">partly</p>
-
-        <p class="detail font-style">cloudy</p>
-    </div>
-
-    <div class="days">
-        <span class="wi wi-day-cloudy icon-calender-size"></span>
-
-        <p class="detail DmB font-style">mon</p>
-
-        <p class="detail font-style">90</p>
-
-        <p class="detail DmB blue font-style">76</p>
-
-        <p class="detail font-style">rainy</p>
-
-        <p class="detail hidden font-style">rainy</p>
-    </div>
-
-    <div class="days mR-zero">
-        <span class="wi wi-day-cloudy icon-calender-size"></span>
-
-        <p class="detail DmB font-style">tues</p>
-
-        <p class="detail font-style">85</p>
-
-        <p class="detail DmB blue font-style">70</p>
-
-        <p class="detail font-style">sunny</p>
-
-        <p class="detail hidden font-style">sunny</p>
-    </div>
-
-    <div class="days mL-first-day">
-        <span class="wi wi-day-cloudy icon-calender-size"></span>
-
-        <p class="detail DmB font-style">wed</p>
-
-        <p class="detail font-style">90</p>
-
-        <p class="detail DmB blue font-style">80</p>
-
-        <p class="detail font-style">cloudy</p>
-
-        <p class="detail hidden">cloudy</p>
-    </div>
-
-    <div class="days">
-        <span class="wi wi-day-cloudy icon-calender-size"></span>
-
-        <p class="detail DmB font-style">thrus</p>
-
-        <p class="detail font-style">92</p>
-
-        <p class="detail DmB blue font-style">88</p>
-
-        <p class="detail font-style">snowy</p>
-
-        <p class="detail hidden">snowy</p>
-    </div>
-
-    <div class="days mR-zero">
-        <span class="wi wi-day-cloudy icon-calender-size"></span>
-
-        <p class="detail DmB font-style">fri</p>
-
-        <p class="detail font-style">95</p>
-
-        <p class="detail DmB blue font-style">90</p>
-
-        <p class="detail font-style">foggy</p>
-
-        <p class="detail font-style">sunny</p>
-    </div>
 
 
 </div>
-
-
-
-
-<!---------left notification here-->
-<div class="top-left-notification">
-
-    <div class="notifications-heading">
-        <a href="#" class="mB-zero mT-zero">TOP NEWS STORIES</a>
-    </div>
-    <div class="notification-border-bottom"></div>
-
-    <div class="notifications-heading">
-        <a href="#" class="mB-zero news" target="_blank">Polls: Trump, Sanders hold leads</a>
-    </div>
-    <div class="notification-border-bottom"></div>
-
-    <div class="notifications-heading">
-        <a href="#" class="mB-zero news" target="_blank">Cop sues estate of teen he killed</a>
-    </div>
-    <div class="notification-border-bottom"></div>
-
-    <div class="notifications-heading">
-        <a href="#" class="mB-zero news" target="_blank">Super Bowl ad sparks blacklash</a>
-    </div>
-    <div class="notification-border-bottom"></div>
-
-    <div class="notifications-heading">
-        <a href="#" class="mB-zero news" target="_blank">ISIS plots in 5 European cities</a>
-    </div>
-    <div class="notification-border-bottom"></div>
-
-</div>
-
-
-</div>
-<!----------------content-wrapper ends here-->
-
-
-<div class="clr"></div>
-
-<div class="current-traffic">
-  <div class="seven-days-header">
-      <h1 class="mB-zero weather-heading font-style FR">CURRENT TRAFFIC</h1>
-    </div>
-  <div class="border-bottom"></div>
-</div>
-
-
-
+<!-------------main-bg ends here-->
 
 
 		<script src="js/jquery.js"></script>
