@@ -1,8 +1,8 @@
-﻿<html ng-app="mirrorApp">
-<html>
+﻿<!DOCTYPE html>
+<html ng-app="mirrorApp">
 <head>
 <meta charset="utf-8">
-<title>index</title>
+<title>hoteldash</title>
 <link rel="stylesheet" type="text/css" href="css/custom.css">
 <link rel="stylesheet" type="text/css" href="css/weather-icons.css">
 <link rel="stylesheet" type="text/css" href="css/notifications.css">
@@ -14,170 +14,230 @@
 
 <body>
 
-<!---top center mini calender-->
-<div class="top">
-   <div class="center" ng-controller="dateCtrl">
 
-   <!-- <div class="time">{{currDate | date:'hh:mm'}}<span
-                class="time">{{currDate.getHours() >= 12 ? ' PM' : ' AM' }}</span>
-        </div>
-        <div class="date small dimmed day">{{currDate | date:'EEEE'}}</div>
-        <div class="date small dimmed day">{{currDate | date:'MMMM d, yyyy'}}</div>-->
-    
-        <div class="time align-center"><span class="amenities-time">{{currDate | date:'hh:mm'}}</span>
-        <sup style="font-size: 30px; position:relative; top:-7px;">{{currDate | date:'ss'}}</sup>
-        <span class="amenities-time">{{currDate.getHours() >= 12 ? ' PM' : ' AM' }}</span></div>
-        <div class="day-wrapper"><span class="day">{{currDate | date:'EEEE'}}</span></div>
-        <div class="month-wrapper"><span class="month">{{currDate | date:'MMMM d, yyyy'}}</span></div>
-    
-   </div>
+<!--------------main-bg here-->
+<div class="main-bg">
+
+
+<!------------weather condition-->
+<div class="tem-top-right">
+<div class="temp-top" style="display: inline-block; width: 100%; margin-top: 7%;text-align: left; font-size:20px;">
+32° F</div>
+  <span class="weather-condition">Mostly Cloudy</span>
 </div>
 
 
-
-<!-- top right side-->
-
-<div class="right top-right-aside" ng-controller="WeatherCtrl">
+<!------------main-container amentities--> 
+ <div class="main-container-amentities">
+   <div class="amentities-wrapper">
+      <div class="date-wrapper ">
+      
+            <div class="time align-center"><span class="amenities-time">12:00</span><sup style="font-size:12px; position:relative; top:-7px;">20</sup><span class="amenities-time">PM</span></div>
+        <div class="date amentities-day">Tuesday, January 19</div>
     
-    <div style="display: inline-block; width:100%; margin-top: 7%;text-align: left;">
-       <span class="first-tem-degree font-style">{{weatherNow.main.temp | number:0}}° F</span>
-      <div class="top-weather-icon">
-       <i class="wi wi-day-cloudy-gusts"></i>
-      </div>
+                <span class="country-name">New York</span>
+                            
     </div>
-
-    <div class="second-tem-degree">
-        <span class="font-style">{{weatherNow.main.temp | number:0}}° F</span>
-    </div>
-
-    <div class="weather-here mB-cloudy">
-        <span class="font-style">{{weatherNow.weather[0].main}}</span>
-    </div>
-    <div class="weather-here">
-        <span class="font-style">{{weatherNow.weather[0].description}}</span>
     </div>
 </div>
-<!--top-right side ends here-->
-<div class="clr"></div>
+<!------------main-container amentities ends here-->
 
-<div class="content-wrapper">
+
+
+<!------hotel dash starts here-->
+
+<div class="content-wrapper-hotel-dash">
+
+
+<!------left aside starts here-->
+<div class="left-aside-notification">
+	<div class="hotel-dash-notification">
+    
+    	<div class="hotel-dash-heading">
+        	<h1>Notification</h1>
+        </div>
+        <div class="hotel-dash-addmore">
+        	<a href="#"><img src="images/add-more-red.png" alt="image-not-found"></a>
+        </div>  
         
-    <div class="top-right-notification-hotel">
-            <div class="notification-hotel-heading">
-            	<a href="#" class="mB-zero mT-zero">Music</a>
-                <div class="add-more-music">
-                    <a href="#"><img src="images/add-more-red.png" alt="image-not-found" title="add-item"></a>
-                </div>
-       		</div>
-        <div class="notification-hotel-border-bottom-music"></div>
-        
-        <div class="play-button">
-        	<a href="#"><img src="images/play-button.png" alt="image-not-found" title="play-button"></a>
+        <div class="hotel-dash-heading-border-bottom">
         </div>
         
-        <div class="top-right-notification-heading">
+        <div class="hotel-dash-heading-detail">
+        	<p>Pillow is almost arriving</p>
+            <p>Food will be delivered in 5mins</p>
+            <p>Robe will be delivered in 10mins</p>
+        </div>
+        
+    </div>
+</div>
+<!------left aside ends here-->
+
+<!-----right aside notification starts here-->
+<div class="right-aside-notification">
+	<div class="hotel-dash-notification">
+    
+    	<div class="hotel-dash-heading">
+        	<h1>Music</h1>
+        </div>
+        
+        <div class="hotel-dash-addmore FW-addmore">
+        	<a href="#"><img src="images/add-more-red.png" alt="image-not-found"></a>
+        </div>
+        
+        <div class="hotel-dash-heading-border-bottom FW-music">
+        </div>
+        
+        <div class="hotel-dash-play-button">
+        	<a href="#"><img src="images/play-button.png" alt="image-not-found"></a>
+        </div>
+        
+        <div class="hotel-dash-happy">
         	<h1>Happy</h1>
-            <p>Pharrell Williams</p>
+            <h3>Pharrell Williams</h3>
         </div>
+        
     </div>
-
-
-<!---------left notification here-->
-<div class="top-left-notification-hotel" ng-controller="notificationsCtrl">
-	
-    <div class="notification-hotel">
-    <div class="notifications-hotel-heading-top">
-        <a href="#" class="mB-zero mT-zero">Notifications</a>
-    </div>
-        <div class="add-more-notification">
-         <a href="#"><img src="images/add-more-red.png" alt="image-not-found" title="add-item"></a>
-        </div>
-    </div>
-    
-    <div class="notification-hotel-border-bottom"></div>
-    
-	<div  ng-repeat="item in notifications">
-        <div class="notifications-hotel-heading">
-            <a href="#" class="mB-zero news" target="_blank">{{item.description}}</a>
-        </div>
-    </div>
-    
 </div>
-</div>
-<!----------------content-wrapper ends here-->
+<!-----right aside notification ends here-->
 
-
-<div class="clr"></div>
-
-<div class="good-morning">
-	<h1>Good Morning!<br/>Ander</h1>
+<div class="hotel-dash-GM">
+	<h1>Goodmorning <br> Andre</h1>
 </div>
 
-<!-------------content warpper starts here--->
-<div class="content-wrapper">
+<!-------hotel amenities starts here-->
 
-<!------hotel amenities starts here----->
-<div class="hotel-amenities">
-	 <div class="hotel-amenities-heaading-div">
-     	<div class="hotel-amenities-heading">
-        	<a href="#" class="mB-zero mT-zero">Hotel Amenities</a>
+<!-------hotel amenities left aside starts here-->
+<div class="hotel-amenities-left-aside">
+	<div class="hotel-amenities-heading-div">
+    	
+        <div class="hotel-amenities-heading">
+        	<h1>Hotel Amenities</h1>
         </div>
-        <div class="add-more-amenities">
-        	<a href="#"><img src="images/add-more-red.png" alt="image-not-found" title="item-data"></a>
+        
+        <div class="hotel-amenities-addmore">
+        	<a href="#"><img src="images/add-more-red.png" alt="image-not-found"></a>
         </div>
-     </div>
-     
-     <div class="hotel-amenities-border-bottom"></div>
-     
-        <div class="hotel-amenities-detail">
-            <div class="hotel-amenities-detail-image">
-                <a href="#"><img src="images/deodorant.png" alt="image-not-found"></a>
+        
+        <div class="hotel-amenities-heading-border-bottom">
+        </div>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images">
+            	<a href="#"><img class="hotel-amenities-detail-images-position" src="images/deodorant.png" alt="image-not-found" ></a>
             </div>
             <div class="hotel-amenities-detail-heading">
-                <a href="#">Deodorant</a>
-      		</div>
-     </div>
-     
-     <div class="hotel-amenities-detail">
-     	<div class="hotel-amenities-detail-image">
-        	<a href="#"><img src="images/deodorant.png" alt="image-not-found"></a>
+            	<h1>Deodorant</h1>
+            </div>
         </div>
-        <div class="hotel-amenities-detail-heading">
-        	<a href="#">Hair Spray</a>
-     </div>
-     
-     <div class="hotel-amenities-detail">
-     	<div class="hotel-amenities-detail-image">
-        	<a href="#"><img src="images/deodorant.png" alt="image-not-found"></a>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images">
+            	<a href="#"><img class="hotel-amenities-detail-images-position hair-spray-position" src="images/hair-spray.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Hair Spray</h1>
+            </div>
         </div>
-        <div class="hotel-amenities-detail-heading">
-        	<a href="#">Hair Spray</a>
-     </div>
-     
-     <div class="hotel-amenities-detail">
-     	<div class="hotel-amenities-detail-image">
-        	<a href="#"><img src="images/deodorant.png" alt="image-not-found"></a>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images">
+            	<a href="#"><img class="hotel-amenities-detail-images-position" src="images/robe-hotel.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Robe Hotel</h1>
+            </div>
         </div>
-        <div class="hotel-amenities-detail-heading">
-        	<a href="#">Hair Spray</a>
-     </div>
-     
-      <div class="hotel-amenities-detail">
-     	<div class="hotel-amenities-detail-image">
-        	<a href="#"><img src="images/deodorant.png" alt="image-not-found"></a>
+        
+       	<div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images">
+            	<a href="#"><img class="hotel-amenities-detail-images-position" src="images/yoga-mat.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Yoga Mat</h1>
+            </div>
         </div>
-        <div class="hotel-amenities-detail-heading">
-        	<a href="#">Hair Spray</a>
-     </div>
+        
+                <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images">
+            	<a href="#"><img class="hotel-amenities-detail-images-position" src="images/iron.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Iron</h1>
+            </div>
+        </div>
+        
+    </div>
 </div>
-<!------hotel amenities ends here----->
+<!-------hotel amenities left aside ends here-->
 
-<!------closet starts here----->
-<div class="closet">
+<!-------hotel amenities right aside starts here-->
+<div class="hotel-amenities-right-aside">
+	<div class="hotel-amenities-heading-div">
+    	
+        <div class="hotel-amenities-heading">
+        	<h1>Closet</h1>
+        </div>
+        
+        <div class="hotel-amenities-addmore">
+        	<a href="#"><img  class="MN-addmore" src="images/add-more-red.png" alt="image-not-found"></a>
+        </div>
+        
+        <div class="hotel-amenities-heading-border-bottom">
+        </div>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images BG-closet">
+            	<a href="#" class="white-circle"><img class="hotel-amenities-detail-images-position white-circle-position" src="images/gray-t-shirt.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1 class="HD-closet">Gray t-shirt</h1>
+            </div>
+        </div>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images BG-closet">
+            	<a href="#" class="white-circle"><img class="hotel-amenities-detail-images-position white-circle-position" src="images/pants.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Pants</h1>
+            </div>
+        </div>
+        
+        <div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images BG-closet">
+            	<a href="#" class="white-circle"><img class="hotel-amenities-detail-images-position white-circle-position" src="images/skirt.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Skirt</h1>
+            </div>
+        </div>
+        
+       	<div class="hotel-amenities-detail-div">
+            <div class="hotel-amenities-detail-images BG-closet">
+            	<a href="#" class="white-circle"><img class="hotel-amenities-detail-images-position" src="images/heels.png" alt="image-not-found" ></a>
+            </div>
+            <div class="hotel-amenities-detail-heading">
+            	<h1>Heels</h1>
+            </div>
+        </div>
+        
+    </div>
 </div>
-<!------closet starts here----->
+<!-------hotel amenities right aside ends here-->
+
+<!-------hotel amenities ends here-->
+
+<div class="clr"></div>
 
 </div>
+<!----hotel dash ends here-->
+
+
+
+
+</div>
+<!-------------main-bg ends here-->
 
 
 		<script src="js/jquery.js"></script>
